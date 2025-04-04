@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Pacific';
+}
+body{
+    background: lightblue;
+}
+
+.wrapper{
+    width:92%;
+    margin: 0 auto;
+    z-index: 100;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background: rgb(29, 112, 140);
+    opacity: .9;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+small {
+    color: rgb(29, 112, 140);
+    font-weight: bold;
+}
+
+.logo{
+    width: 80%;
+    float: left;
+    text-align: left;
+    line-height: 80px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 4px;
+}
+nav{
+    float: right;
+    line-height: 82px;
+}
+nav a{
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 1px;
+    padding: 36px, 10px;
+    color: white;
+    font-weight: 500;
+}
+
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    margin-top: -150px;
+}
+
+.text-box{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.container:first-child {
+    margin-top: 0;
+}
+
+.text-box img {
+    width: 100%; /* Adjust width to fit inside the box */
+    height: auto; /* Keep aspect ratio */
+    max-height: 200px; /* Limit image height */
+    object-fit: cover; /* Crop image if needed */
+}
+.right-container{
+    left: 50%;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index:0;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: -62.5px;
+    z-index: 10;
+}
+.right-container .dot{
+    left:-62.5px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 140px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 140px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -15px;
+}
+
+.information-page {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    padding: 20px;
+    color: white;
+
+    background-image: url('../images/Taipei.jpeg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the whole div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+}
+.information-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(173, 216, 230, 0.4);
+    z-index: 0;
+}
+.information-page * {
+    position: relative;
+    z-index: 1;
+}
+
+.author-information{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 30%;
+}
+
+.button-class {
+    background-color: lightblue;
+    /* Green */
+    border: none;
+    color: rgb(52hjjjjjjjjj, 78, 87);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block; /* Forces the button to take up the full width */
+}
+
+.blockquote {
+    padding: 60px 80px 40px;
+    position: relative;
+    font-family: "Georgia", serif;
+    font-style: italic;
+}
+.blockquote p {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.blockquote:before {
+    position: absolute;
+    font-family: "Georgia", serif;
+    top: 0;
+    content:"\f10d";
+    font-size: 200px;
+    color: rgba(0,0,0,0.1);
+     
+  }
+  .blockquote::before {
+    content: '“'; /* This adds the quotation mark */
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 300px; /* You can adjust the size of the quotation mark */
+    top: 70%;
+    left: 16%;
+    transform: translate(-50%, -50%); /* Center it behind the quote */
+    color: rgba(0, 0, 0, 0.1); /* Light color for the quotation mark */
+    z-index: -1; /* Ensure the quote text is above the quotation mark */
+}
+
+
+  .blockquote::after {
+      content: "";
+      top: 20px;
+      left: 50%;
+      margin-left: -100px;
+      position: absolute;
+      border-bottom: 3px solid rgb(17, 91, 116);
+      height: 3px;
+      width: 200px;
+  }
+
+
+.container-detail{
+    padding: 10px 50px;
+    position: relative;
+    width: 100%;
+    margin-top: -0px;
+}
+
+.text-box-detail{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.text-box-detail h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.text-box-detail small{
+    text-align: center;
+}
+
+.text-box-detail img {
+    display: block;
+    width: 50%; /* Adjust width to fit inside the box */
+    height: auto; /* Keep aspect ratio */
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+
+}
