@@ -14,6 +14,15 @@ body{
     margin: 0 auto;
     z-index: 100;
 }
+.header1{
+    height: 80px;
+    width: 100%;
+    background: rgb(29, 112, 140);
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
 header{
     height: 80px;
     width: 100%;
@@ -37,22 +46,31 @@ small {
 }
 .logo a{
     text-decoration: none;
-    font-size: 30px;
     color: white;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 80px;
 }
+
+.nav1{
+    float: right;
+    margin-top: -50px;
+}
+
 nav{
     float: right;
-    line-height: 82px;
+    margin-top: 30px;
 }
+
 nav a{
     text-decoration: none;
-    letter-spacing: 4px;
+    letter-spacing: 0.5px;
     font-size: 20px;
     margin: 0 1px;
     padding: 36px, 10px;
     color: white;
     font-weight: 500;
+    margin-left: 30px;
 }
 
 
@@ -147,6 +165,10 @@ nav a{
     height: 100vh; 
     padding: 20px;
     color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Times New Roman", Times, serif;
 
     background-image: url('../images/Taipei.jpeg'); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the whole div */
@@ -176,10 +198,10 @@ nav a{
 }
 
 .button-class {
-    background-color: lightblue;
+    background-color: rgb(101, 154, 172);
     /* Green */
     border: none;
-    color: rgb(52hjjjjjjjjj, 78, 87);
+    color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -190,6 +212,7 @@ nav a{
     border-radius: 4px;
     display: block; /* Forces the button to take up the full width */
 }
+
 
 .blockquote {
     padding: 60px 80px 40px;
