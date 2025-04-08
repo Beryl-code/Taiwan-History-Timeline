@@ -54,7 +54,7 @@ small {
 
 .nav1{
     float: right;
-    margin-top: -50px;
+    margin-top: -53px;
 }
 
 nav{
@@ -225,15 +225,7 @@ nav a{
     font-weight: 700;
     text-align: center;
 }
-.blockquote:before {
-    position: absolute;
-    font-family: "Georgia", serif;
-    top: 0;
-    content:"\f10d";
-    font-size: 200px;
-    color: rgba(0,0,0,0.1);
-     
-  }
+
   .blockquote::before {
     content: '“'; /* This adds the quotation mark */
     position: absolute;
@@ -242,10 +234,9 @@ nav a{
     top: 70%;
     left: 16%;
     transform: translate(-50%, -50%); /* Center it behind the quote */
-    color: rgba(0, 0, 0, 0.1); /* Light color for the quotation mark */
+    color: rgba(0, 0, 0, 0.15); /* Light color for the quotation mark */
     z-index: -1; /* Ensure the quote text is above the quotation mark */
 }
-
 
   .blockquote::after {
       content: "";
