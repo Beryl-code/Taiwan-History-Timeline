@@ -132,6 +132,7 @@ nav a{
     position: absolute;
     right: -62.5px;
     z-index: 10;
+    top: 175px;
 }
 .right-container .dot{
     left:-62.5px;
@@ -141,7 +142,7 @@ nav a{
     height: 0;
     width: 0;
     position: absolute;
-    top: 140px;
+    top: 170px;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
@@ -153,13 +154,66 @@ nav a{
     height: 0;
     width: 0;
     position: absolute;
-    top: 140px;
+    top: 170px;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 15px solid white;
     left: -15px;
 }
+
+.time-wrapper {
+    position: absolute;
+    top: 186px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+  
+.time-label {
+    font-weight: bold;
+    color: rgb(29, 112, 140);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 11;
+}
+  
+.time-line {
+    height: 2px;
+    background-color: rgb(29, 112, 140);
+    flex-shrink: 0;
+    width: 60px;
+    top: 30px;
+    margin-top: 22px;
+    z-index: 3;
+}
+  
+  /* Left container: fixed start, variable end */
+  .fixed-left {
+    left: 610px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-left: -10px;
+  }
+  
+  /* Right container: fixed start, variable end */
+  .fixed-right {
+    right: 610px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: -10px;
+  }
+  
+  .fixed-left .time-line{
+    margin-right: -4px;
+  }
+  .fixed-right .time-line{
+    margin-left: -4px;
+  }
+  
+
 
 .information-page {
     display: flex; 
@@ -352,6 +406,14 @@ nav a{
 .text-box-detail-citation p {
     text-indent: 2em;
     margin-bottom: 0;
-    line-height: 2;
+    line-height: 2.5;
 }
 
+.start{
+    text-indent: 0 !important;
+}
+
+.time_right{
+    z-index: 1000;
+    margin-left: 90% !important;
+}
