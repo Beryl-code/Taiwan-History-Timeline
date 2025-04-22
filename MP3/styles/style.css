@@ -87,7 +87,7 @@ nav a{
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    margin-top: -150px;
+    margin-top: -110px;
 }
 
 .text-box{
@@ -164,7 +164,7 @@ nav a{
 
 .time-wrapper {
     position: absolute;
-    top: 186px;
+    top: 185px;
     display: flex;
     align-items: center;
     width: max-content;
@@ -172,6 +172,7 @@ nav a{
   
 .time-label {
     font-weight: bold;
+    font-size: 18px;
     color: rgb(29, 112, 140);
     background-color: rgba(255, 255, 255, 0.85);
     padding: 2px 6px;
